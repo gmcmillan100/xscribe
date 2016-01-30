@@ -1,3 +1,210 @@
-<h2 id="title">Welcome to Ember</h2>
 
+<section id="helloapp">
+
+<body data-section="about">
+
+<div id="masthead-container">
+<div id="masthead" class="container">
+  <nav>
+    <ul class="horizontal">
+	  <li><a href="#l2">Gallery</a></li>
+	  <li><a href="#l1">Customers</a></li>
+      <li><a href="#l4">Services</a></li>
+      <li><a href="#l3" class="is-active">About</a></li>
+      <li><a href="#l5">Contact</a></li>
+      <li><a href="">Sign In</a></li>
+    </ul>
+  </nav>
+</div>  <!-- .container#masthead -->
+</div>  <!-- #masthead-container -->
+
+
+<div id="page-highlight"></div>
+
+<div id="main" class="container">  
+  <div class="row-rail-viewport">
+    <div class="row-rail">
+      <div class="row" id="about">
+        <div class="glamour-shot">
+  <img src="/assets/images/headshot.png"/>
+</div>
+  
+<article class="span6" id="intro">
+  <hgroup>
+    <h1>Greg McMillan</h1>
+    <h2>Documentation and Training Development for Xscribe</h2>
+  </hgroup>
+  
+  <section>
+    <p>Experienced</p>
+    <p>Technical</p>
+    <p>Fast</p>
+  </section>
+</article>
+      </div>
+      <div class="row" id="resume">
+              </div>
+      <div class="row" id="books">
+              </div>
+          </div>
+  </div>  <!-- .row-rail-viewport -->
+  
+
+    <div class="inside-round-shadow top myhead"></div>
+		
+		
+<h1 id="l2" class="myhead">Gallery</h1>
+
+{{#link-to 'hello'}}Graft in Hello template{{/link-to}}
+
+<div>
 {{outlet}}
+</div>
+
+<div class="myclass">
+  <div><img src="/assets/images/ssx2.jpg" width="800" height="430"/></div>
+  <div><img src="/assets/images/corpit.png" width="800" height="430"/></div>
+  <div><img src="/assets/images/ipv4RoutingProcket.png" width="800" height="430"/></div>
+  <div><img src="/assets/images/as5x00-1.jpg" width="800" height="430"/></div>
+  <div><img src="/assets/images/ssx.jpg" width="800" height="430"/></div>
+  <div><img src="/assets/images/wikiMan.png" width="800" height="430"/></div>
+  <div><img src="/assets/images/cr.png" width="800" height="430"/></div>
+</div>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+	$('.myclass').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 3000,
+	  dots: true,
+    });
+  });
+</script>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function ($){
+if (navigator.userAgent.match(/(iPod|iPhone|iPad)/i)) {
+    $('.myclass').hide();
+    $('.myhead').hide();
+};
+if (navigator.userAgent.match(/Android/i)){
+    $('.myclass').hide();
+};
+});
+</script>
+
+
+	
+	<!-- Redirect for mobile devices
+	
+	<script type="text/javascript">
+	if((navigator.userAgent.match(/iPhone/i)) || 
+	 (navigator.userAgent.match(/iPad/i))) {
+	   if (document.cookie.indexOf("iphone_redirect=false") == -1) window.location = "http://www.employees.org/~mcmillan/gregprof.htm";
+	}
+	</script>
+	
+	-->
+
+<div class="inside-round-shadow top"></div>
+
+<h1 id="l1">Customers</h1>
+
+<div class="clogos"><img src="/assets/images/linkedinlogo.png" width="167" height="150"/></div>
+
+<p>"Greg is a dependable individual that I have enjoyed working with on a massive multicolo project and opening of third data center for LinkedIn."</p>
+
+<p><a href="https://www.linkedin.com/in/rajeshbindu" target="_blank">Rajesh Bindu</a>, Staff Program Manager at LinkedIn</p>
+
+
+<div class="clogos"><img src="/assets/images/spiderlogo.jpg" width="250" height="49"/></div>
+
+<p>"Greg is by far the best producer of knowledge products that I have worked with. When my company was ready for technical documentation work, I knew we could count on Greg to come through and meet our aggressive timelines. I am particularly impressed with the following about Greg:</p>
+
+	<ul>
+<li>Ability sort through technically complex content independently and with minimal interruption to our internal technical staff</li>
+<li>Ability to earn the respect of our typically demanding technical staff</li>
+<li>Very skilled in translating technical content into beautifully laid out schematics and diagrams</li>
+<li>A very rare and extremely valuable knack for making the complex look simple & delightful</li>
+	</ul>
+	
+<p>Above all, Greg is just a pleasure to work with. A truly world-class producer of knowledge products."</p>
+
+<p><a href="http://www.linkedin.com/in/allanbaw" target="_blank">Allan Baw</a>, Founder SpiderCloud Wireless</p>
+
+
+
+<div class="clogos"><img src="/assets/images/stokelogo.jpg" width="250" height="84"/></div>
+
+<p>Xscribe delivered on time. A full service doc team. Very high quality visually and textually. Able to handle very technically challenging material. Xscribe works well with technical experts and extracts relevant infor in an efficient manner. Customer feedback on Tech Doc was very positive.</p>
+	
+<p><a href="http://www.linkedin.com/pub/peter-wexler/21/414/762" target="_blank">Peter Wexler</a>, VP Engineering at Stoke</p>
+
+
+
+<div class="clogos"><img src="/assets/images/ciscologo.jpg" width="250" height="129"/></div>
+
+<p>All of my content development experiences with Xscribe were excellent. Xscribe knows how to work with enginers on complex subject matter. Xscribe is still the benchmark I judge content developers by. Thanks Xscribe!</p>
+
+<p><a href="http://www.linkedin.com/in/kttex/en" target="_blank">Kris Thompson</a>, CCIE at Cisco Systems</p>
+
+
+
+<div class="clogos"><img src="/assets/images/procketlogo.jpg" width="250" height="86"/></div>
+
+<p>Xscribe is dedicated, meticulous, self driven, self reliant, and aims to succeed. In the 3.5 years that Xscribe worked with me, Xscribe never missed a deadline.</p>
+
+<p><a href="http://www.linkedin.com/pub/swapna-trivadi/3/a60/1ba/en" target="_blank">Swapna Trivadi</a>, Documentation Manager at Procket Networks</p>
+
+
+
+<div class="clogos"><img src="/assets/images/f10logo.jpg" width="250" height="55"/></div>
+
+<p>In an industry where learning curves for tech writers are legendary, Xscribe was able to step right into a complicated project with experienced writers and get it out the door on a tight deadline. The consumers of the document were delighted with the quality. You can't ask for more than that.</p>
+
+<p><a href="http://www.linkedin.com/pub/steven-russell/1/631/a88/en" target="_blank">Steve Russell</a>, Sr. Mgr Knowledge Products, Force10 Networks</p>
+
+<div class="inside-round-shadow top"></div>
+
+<h1 id="l4">Services</h1>
+
+<ul>
+<li>Technical documentation</li>
+<li>Training courses</li>
+<li>White papers</li>
+<li>Posters</li>
+<li>Websites</li>
+</ul>
+
+<div class="inside-round-shadow top"></div>
+
+<h1 id="l3">About</h1>
+<p>Greg has been an entrepreneur and technical writer for 20 years. See his <a href="http://www.linkedin.com/pub/greg-mcmillan/1/6b8/8a/" target="_blank">LinkedIn profile</a>.
+
+He started Xscribe in 2000 and has employed dozens of writers, editors, artists, and web developers on various projects in Silicon Valley. 
+
+Greg enjoys organic gardening, mountain biking, and spending quality time with family and friends.</p>
+
+<div class="inside-round-shadow top"></div>
+
+
+<h1 id="l5">Contact</h1>
+
+<form action="contactform.php" method="post" class="formstyle2" onSubmit="alert('Thank you. Someone will contact you soon.');">
+	<div><span class="formstyle1">Name:</span><input type="text" name="name"></div>
+	<div><span class="formstyle1">Email:</span><input type="text" name="email"></div>
+	<div><span class="formstyle1">Phone:</span><input type="text" name="phone"></div>
+	<div><span class="formstyle1">Comments:</span><textarea name="comments" style="width: 400px; height: 125px;"></textarea></div>
+	<div><span class="formstyle1"></span><input id="submit" type="submit" value="Submit" name="sendit"></div>			
+</form>
+
+  </div> 
+
+</body>
+
+</section>
+
